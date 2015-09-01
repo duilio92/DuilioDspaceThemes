@@ -29,7 +29,8 @@
     <xsl:import href="../dri2xhtml.xsl"/>
 		<xsl:import href="/lib/xsl/core/page-structure.xsl"/>
 		<xsl:import href="/lib/xsl/custom/footer.xsl"/>
-		<xsl:import href="/lib/xsl/custom/header.xsl">
+		<xsl:import href="/lib/xsl/core/navigation.xsl"/>
+		<xsl:import href="/lib/xsl/custom/header.xsl"/>
     <xsl:output indent="yes"/>
     
     

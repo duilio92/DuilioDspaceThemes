@@ -51,28 +51,60 @@
 <div class="menu">
 	<ul>
 		<li><!-- CORREGIR LOS ENLACES PARA QUE SEAN LOCALES-->
-			<a href="/biblioteca" title="Inicio">Inicio</a>
+			<a>  
+					<xsl:attribute name="href">
+           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
+					</xsl:attribute>
+			Inicio</a>
 		</li>
 		<li>
-			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=publicaciones&amp;l=es&amp;w=utf-8">Libros y Cartillas</a>
+			<a>
+				<xsl:attribute name="href"><!--DIRECCION BASE DE DSPACE + el handle para el ejemplo(HARDCODEADO)-->
+           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>/handle/123456789/4
+				</xsl:attribute>
+				Libros y Cartillas</a>
 		</li>
 		<li>
-			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=phtv&amp;l=es&amp;w=utf-8">Videos</a>
+			<a>
+				<xsl:attribute name="href"><!--DIRECCION BASE DE DSPACE + el handle para el ejemplo(HARDCODEADO)-->
+           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>/handle/123456789/3
+				</xsl:attribute>			
+			Videos</a>
 		</li>
 		<li>
-			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=phradio&amp;l=es&amp;w=utf-8">Audio</a>
+			<a>
+				<xsl:attribute name="href"><!--DIRECCION BASE DE DSPACE + el handle para el ejemplo(HARDCODEADO)-->
+           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>/handle/123456789/5
+				</xsl:attribute>			
+			Audio</a>
 		</li>
 		<li>
-			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=multimedia&amp;l=es&amp;w=utf-8">Multimedia</a>
+			<a>
+				<xsl:attribute name="href"><!--DIRECCION BASE DE DSPACE + el handle para el ejemplo(HARDCODEADO)-->
+           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>/handle/123456789/6
+				</xsl:attribute>			
+			Multimedia</a>
 		</li>
 		<li>
-			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=boletines&amp;l=es&amp;w=utf-8">Boletines</a>
+			<a>
+				<xsl:attribute name="href"><!--DIRECCION BASE DE DSPACE + el handle para el ejemplo(HARDCODEADO)-->
+           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>/handle/123456789/7
+				</xsl:attribute>			
+			Boletines</a>
 		</li>
 		<li>
-			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=jica&amp;l=es&amp;w=utf-8">JICA</a>
+				<a>
+				<xsl:attribute name="href"><!--DIRECCION BASE DE DSPACE + el handle para el ejemplo(HARDCODEADO)-->
+           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>/handle/123456789/8
+				</xsl:attribute>			
+			JICA</a>
 		</li>
 		<li>
-			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=red_latinoamericana&amp;l=es&amp;w=utf-8">Red Latinoamericana</a>
+			<a>
+				<xsl:attribute name="href"><!--DIRECCION BASE DE DSPACE + el handle para el ejemplo(HARDCODEADO)-->
+           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>/handle/123456789/9
+				</xsl:attribute>			
+			Red Latinoamericana</a>
 		</li>
 	</ul>
 </div>
