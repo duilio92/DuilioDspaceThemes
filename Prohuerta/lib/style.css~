@@ -17,6 +17,26 @@ padding: 0;
 .clearfix {
     overflow: auto;
 }
+/*HEADER*/
+nav#access {
+    background: black;
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);*/
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0 auto 6px;
+    width: 100%;
+}
+nav#access ul {
+    font-size: 13px;
+    list-style: outside none none;
+    margin: 0 0 0 -0.8125em;
+    padding-left: 0;
+}
+nav#access li {
+    float: left;
+    position: relative;
+}
 
 div#ds-main {
 				max-width: 1000px;
@@ -111,16 +131,8 @@ div#ds-body {
 /*
 FIN FOOTER NOTA: REVISAR SI LOS ESTILOS DEL FOOTER QUEDAN BIEN AFECTANDO AL RESTO
 */
-/*HEADER*/
-#access {
-    background: #0a0a0a none repeat scroll 0 0;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-    clear: both;
-    display: block;
-    float: left;
-    margin: 0 auto 6px;
-    width: 100%;
-}
+
 body {
     background-color: #0b7baf;
+		line-height: 20px;
 }

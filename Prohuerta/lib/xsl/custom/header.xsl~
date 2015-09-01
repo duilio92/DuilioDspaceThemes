@@ -21,7 +21,8 @@
 
 <xsl:template name="buildHeader">
         <div id="ds-header">
-            <a>
+           <!-- quito el contenido del header por defecto en dspace 
+						<a>
                 <xsl:attribute name="href">
                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
                     <xsl:text>/</xsl:text>
@@ -30,7 +31,7 @@
             </a>
             <h1 class="pagetitle">
                 <xsl:choose>
-                        <!-- protectiotion against an empty page title -->
+                
                         <xsl:when test="not(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='title'])">
                                 <xsl:text> </xsl:text>
                         </xsl:when>
@@ -42,11 +43,50 @@
             </h1>
             <h2 class="static-pagetitle"><i18n:text>xmlui.dri2xhtml.structural.head-subtitle</i18n:text></h2>
 
+						-->
+    <header role="banner" id="branding">
 
-    
+<a href="http://prohuerta.inta.gov.ar/"><img width="1000" height="288" src="http://prohuerta.inta.gov.ar/wp-content/uploads/2014/07/imagen3_mini-1170x534.jpg" alt=""/></a>
+
+<nav id="access" role="navigation">
+<div class="menu">
+	<ul>
+		<li>
+			<a href="/biblioteca" title="Inicio">Inicio</a>
+		</li>
+		<li>
+			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=publicaciones&amp;l=es&amp;w=utf-8">Libros y Cartillas</a>
+		</li>
+		<li>
+			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=phtv&amp;l=es&amp;w=utf-8">Videos</a>
+		</li>
+		<li>
+			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=phradio&amp;l=es&amp;w=utf-8">Audio</a>
+		</li>
+		<li>
+			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=multimedia&amp;l=es&amp;w=utf-8">Multimedia</a>
+		</li>
+		<li>
+			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=boletines&amp;l=es&amp;w=utf-8">Boletines</a>
+		</li>
+		<li>
+			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=jica&amp;l=es&amp;w=utf-8">JICA</a>
+		</li>
+		<li>
+			<a href="/biblioteca?site=localhost&amp;a=p&amp;p=about&amp;c=red_latinoamericana&amp;l=es&amp;w=utf-8">Red Latinoamericana</a>
+		</li>
+	</ul>
+</div>
+</nav>
+
+</header>
             
 
 
+
+
+
+						<!--Por ahora dejo el login -->
             <xsl:choose>
                 <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
                     <div id="ds-user-box">
@@ -91,3 +131,4 @@
 
         </div>
     </xsl:template>
+</xsl:stylesheet>

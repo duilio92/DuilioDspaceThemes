@@ -44,14 +44,13 @@
             <h2 class="static-pagetitle"><i18n:text>xmlui.dri2xhtml.structural.head-subtitle</i18n:text></h2>
 
 						-->
-    <header role="banner" id="branding">
 
-<a href="http://prohuerta.inta.gov.ar/"><img width="1000" height="288" src="http://prohuerta.inta.gov.ar/wp-content/uploads/2014/07/imagen3_mini-1170x534.jpg" alt=""></a>
+<a href="http://prohuerta.inta.gov.ar/"><img width="1000" height="288" src="http://prohuerta.inta.gov.ar/wp-content/uploads/2014/07/imagen3_mini-1170x534.jpg" alt=""/></a>
 
 <nav id="access" role="navigation">
 <div class="menu">
 	<ul>
-		<li>
+		<li><!-- CORREGIR LOS ENLACES PARA QUE SEAN LOCALES-->
 			<a href="/biblioteca" title="Inicio">Inicio</a>
 		</li>
 		<li>
@@ -79,8 +78,6 @@
 </div>
 </nav>
 
-</header>
-            
 
 
 
@@ -131,3 +128,4 @@
 
         </div>
     </xsl:template>
+</xsl:stylesheet>

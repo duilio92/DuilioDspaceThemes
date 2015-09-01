@@ -27,7 +27,7 @@ div#ds-main {
         padding: 0;
         height: 100%;
 				background-color: white;
-				overflow:auto;
+				overflow:auto
 }
 
 div#ds-header {
