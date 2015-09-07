@@ -1956,9 +1956,9 @@ div.spacer {
 div#ds-options {
         position: relative;
         float: left;
-        width: 153px;
-        color: inherit;
-        margin: 0px 0px 0px 10px;
+    		margin: 0 0 0 7px;
+    		position: relative;
+    		width: 158px;
 }
 
 
@@ -5789,6 +5789,8 @@ padding: 0px 0px 20px 0px;
 #ds-search-option-head {
     color: green;
     margin-bottom: 2%;
+		margin-top: -10%;
+		font-size: 16px;
 }
 #ds-search-form-scope-all {
     margin-bottom: 5%;
@@ -5801,3 +5803,25 @@ padding: 0px 0px 20px 0px;
     margin-bottom: 10%;
     margin-top: 7%;
 }
+/* Estilos para la busqueda */
+#busqueda{
+    background-color: green;
+    background-image: url("../images/iconobusqueda.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0 none;
+    border-radius: 0 5px 5px 0;
+    height: 32px;
+    width: 29px;
+}
+#txtbusqueda{
+    background-color: #FFF;
+		border-radius: 5px 0 0 5px;
+    height: 30px;
+   	width: 123px;
+		border: 1px solid rgba(65, 140, 79, 0.43);
+		margin-right: -3px;
+		float:left;
+}
+
+

@@ -47,7 +47,7 @@
             <xsl:value-of select="substring-after($url,'youtube.com/watch?v=')"/>
         </xsl:param>
 
-        <xsl:variable name="embedUrl" select="concat('//www.youtube.com/embed/',$video-id,'?html5=1')"/>
+        <xsl:variable name="embedUrl" select="concat('//www.youtube.com/embed/',$video-id)"/>
 
         <xsl:element name="iframe">
             <xsl:attribute name="class">youtube-video</xsl:attribute>

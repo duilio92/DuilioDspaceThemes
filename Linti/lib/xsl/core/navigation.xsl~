@@ -86,8 +86,7 @@
                                     </xsl:text>
                                     </xsl:attribute>
                                 </input>
-																<!--Quito la parte de las opciones temporalmente -->
-                                <!--<xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
+                                <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
                                     <label>
                                         <input id="ds-search-form-scope-all" type="radio" name="scope" value=""
                                                checked="checked"/>
@@ -112,7 +111,7 @@
 
                                         </xsl:choose>
                                     </label>
-                                </xsl:if>-->
+                                </xsl:if>
                             </fieldset>
                         </form>
 <!--DUILIO fin buscador -->
