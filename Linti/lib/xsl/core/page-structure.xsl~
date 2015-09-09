@@ -57,7 +57,7 @@
         overriding the dri:document template.
     -->
     <xsl:template match="dri:document">
-        <html lang="es-AR"  xml:lang="es-AR">
+        <html xml:lang="es-AR">
             <!-- First of all, build the HTML head element -->
             <xsl:call-template name="buildHead"/>
             <!-- Then proceed to the body -->

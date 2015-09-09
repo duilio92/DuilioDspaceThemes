@@ -45,9 +45,7 @@
 	<div id="ds-options">           
 	<!--DUILIO agrego el buscador , modifico para que no esten las opciones -->
 	<xsl:if test="not(contains(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='request'][@qualifier='URI'], 'discover'))">
-	            <h1 id="ds-search-option-head" class="ds-option-set-head">
-                        <i18n:text>xmlui.dri2xhtml.structural.search</i18n:text>
-                    </h1>
+	           
                     <div id="ds-search-option" class="ds-option-set">
                         <!-- The form, complete with a text box and a button, all built from attributes referenced
                      from under pageMeta. -->
@@ -58,8 +56,13 @@
                                         select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
                             </xsl:attribute>
                             <fieldset>
+																<legend> 
+																	<h1 id="ds-search-option-head" class="ds-option-set-head">
+                        						<i18n:text>xmlui.dri2xhtml.structural.search</i18n:text>
+                    							</h1>
+																</legend>
 																<!-- Borro la clase del input para poder manejarlo con el id-->
-                                <input  type="text"  aria-label="buscar en el repositorio" id="txtbusqueda">
+                                <input  type="text" title="buscar en el repositorio" aria-label="buscar en el repositorio" id="txtbusqueda">
                                     <xsl:attribute name="name">
                                         <xsl:value-of
                                                 select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='queryField']"/>
@@ -171,7 +174,7 @@
     </xsl:template>
 
 
-    <xsl:template match="dri:options/dri:list/dri:head" priority="3">
+   <xsl:template match="dri:options/dri:list/dri:head" priority="3">
         <h3>
             <xsl:call-template name="standardAttributes">
                 <xsl:with-param name="class">ds-option-set-head</xsl:with-param>
@@ -179,7 +182,7 @@
             <xsl:apply-templates />
         </h3>
     </xsl:template>
-
+		
     <!-- Items inside option lists are excluded from the "orphan roundup" mechanism -->
     <xsl:template match="dri:options//dri:item" mode="nested" priority="3">
 	<div class="icono{position()}">

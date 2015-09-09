@@ -1,0 +1,9 @@
+/*Script to hide header link except when it is focused*/
+window.addEventListener("load", setUp);
+function setUp(){
+		var hiddenLink = document.getElementById("linkToBody");
+		hiddenLink.setAttribute("hidden","true");
+		hiddenLink.onfocus=function(){hiddenLink.setAttribute("hidden","false");}
+
+		//hiddenLink.onblur=function(){hiddenLink.setAttribute("hidden","true");}
+}

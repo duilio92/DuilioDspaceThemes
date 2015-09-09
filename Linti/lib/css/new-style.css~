@@ -8,6 +8,9 @@
  
  /*HTML BG*/
  
+/*
+Estilos revisados el 8 de septiembre de 2015, remplazo px en font-size por em
+*/
 * {
 margin: 0;
 padding: 0;
@@ -36,7 +39,7 @@ html {
 
 body {
 font-family: Ubuntu, Trebuchet MS, Arial, Helvetica, sans-serif;
-font-size: 13px;
+font-size: 0.8em;
 text-align: left;
 /*background: rgb(255, 255, 255) url('../images/bg.png');*/
 -webkit-font-smoothing:antialiased
@@ -128,7 +131,7 @@ cursor: default !important;
 #aspect_administrative_ControlPanel_field_submit_deactivate {
    text-transform: uppercase;
    border: 1px solid #25729a;-moz-box-shadow: #B4B5B5 1px 1px 5px ; 
-   box-shadow: #B4B5B5 1px 1px 5px ; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:10px;font-family:arial, helvetica, sans-serif; 
+   box-shadow: #B4B5B5 1px 1px 5px ; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:0.7em;font-family:arial, helvetica, sans-serif; 
    padding: 8px 15px 8px 15px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
    font-weight: 100; text-align: center;
    background-color: #3093C7;
@@ -267,7 +270,7 @@ div#ds-user-box a,
      text-transform: uppercase;
      border: 1px solid #4e955b;-moz-box-shadow: #B4B5B5 1px 1px 5px ; 
      box-shadow: #B4B5B5 1px 1px 5px ; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;
-     font-size: 10px;font-family:arial, helvetica, sans-serif; 
+     font-size: 0.7em;font-family:arial, helvetica, sans-serif; 
      padding: 8px 15px 8px 15px; 
      text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
      font-weight: 100; text-align: center; 
@@ -377,7 +380,7 @@ div#ds-header h1,div#ds-header h2 {
 
 ul#ds-trail {
 color:#A8101C;
-font-size: 12px;
+font-size: 1em;
 font-weight: 400;
 text-transform: uppercase;
 padding: 5px 10px 5px 10px;
@@ -495,13 +498,13 @@ div#ds-body {
 
 .ds-div-search-tit{  padding: 5px 0px 0px 0px;  
   color: transparent;  
-    font-size: 14px !important;  text-transform: uppercase;
+    font-size: 1.2em !important;  text-transform: uppercase;
 
   display: inline-table;  margin-bottom: 4px;  visibility: hidden;}
 
 h1 { 
     padding: 0px;  
-    font-size: 18px;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -516,7 +519,7 @@ h1 {
 
 .ds-div-tit{
     color: #418c4f !important;
-    font-size: 18px !important;
+    font-size: 1.5em !important;
     margin-bottom: 10px;
     float: left;
     font-weight: 500;
@@ -532,11 +535,11 @@ div#ds-body h1.ds-div-head {
 
 div#ds-body h1.ds-search-big {
     position: relative;  padding: 5px 10px 5px 10px;  color: white;  
-    font-size: 11px !important;  text-transform: uppercase;  background: #4073A6;
+    font-size: 1em !important;  text-transform: uppercase;  background: #4073A6;
 }
 
 div#ds-body h2 {
-        font-size: 14px !important;
+        font-size: 1em !important;
         margin-bottom: 0px;
         color: #4e955b;
         font-weight: 500;
@@ -551,7 +554,7 @@ div#ds-body h3,
 text-transform: uppercase;
 margin: 10px 0px 10px 0px;
 color: #25729a !important; 
-font-size: 14px !important;
+font-size: 1.1em !important;
 font-weight: 400;
 border-bottom: 1px solid #25729a;
 padding: 5px;
@@ -696,7 +699,7 @@ padding: 5px;
 
 #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-dateissued-results ul#community-list .ds-artifact-item .artifact-description .artifact-title a,
 #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-title-results ul#community-list .ds-artifact-item .artifact-description .artifact-title a{
-    font-size: 14px; width: 550px; height: 60px !important; padding: 10px !important; display: block;
+    font-size: 1.1em; width: 550px; height: 60px !important; padding: 10px !important; display: block;
     
 }
 
@@ -889,7 +892,7 @@ width: 100%;
     text-transform: uppercase; 
     margin: 10px 0px 5px 0px; 
     color: #25729a !important; 
-    font-size: 14px !important; 
+    font-size: 1.1em !important; 
     font-weight: 400; border-bottom: 1px solid #25729a; padding: 5px;
 
     display: block;
@@ -915,7 +918,7 @@ width: 100%;
     padding: 5px 5px 0px 5px;
     border: 0;
     color: #418c4f !important;
-    font-size: 12px !important;
+   	font-size:0.9em !important;
 }
 
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser #community-box #coleccion1community-list #community-box .ds-artifact-item  a:hover{
@@ -954,7 +957,7 @@ width: 100%;
     text-transform: uppercase; 
     margin: 10px 0px 5px 0px; 
     color: #25729a !important; 
-    font-size: 14px !important; 
+    font-size: 1.1em !important; 
     font-weight: 400; border-bottom: 1px solid #25729a; padding: 5px;
 
     display: block;
@@ -977,7 +980,7 @@ width: 100%;
 
     border: 0;
     color: #418c4f !important;
-    font-size: 12px !important;
+    font-size:0.9em !important;
     margin: 0px 0px 5px 0px; padding: 5px 5px 0px 5px;
 }
 
@@ -1019,7 +1022,7 @@ width: 100%;
     text-transform: uppercase; 
     margin: 10px 0px 5px 0px; 
     color: #25729a !important; 
-    font-size: 14px !important; 
+    font-size: 1.1em !important; 
     font-weight: 400; border-bottom: 1px solid #25729a; padding: 5px;
 
     display: block;
@@ -1042,7 +1045,7 @@ width: 100%;
 
     border: 0;
     color: #418c4f !important;
-    font-size: 12px !important;
+    font-size:0.9em !important;
     margin: 0px 0px 5px 0px; padding: 5px 5px 0px 5px;
 
 
@@ -1339,7 +1342,7 @@ ul.pagination-links {
         list-style: none;
         display: inline-block;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 1.1em;
         width: 20px;
         height: 20px;
 }
@@ -1746,7 +1749,7 @@ fieldset.ds-form-list ol {
 
 fieldset.ds-form-list legend {
         color: #25729a;
-        font-size: 14px !important;
+        font-size: 1.1em !important;
         font-weight: 400;
 }
 
@@ -1774,7 +1777,7 @@ form.ds-interactive-div fieldset.ds-form-sublist ol {
 }
 
 form.ds-interactive-div fieldset.ds-form-sublist legend {
-    text-transform: uppercase; margin: 10px 0px 5px 0px; color: #25729a !important; font-size: 14px !important; font-weight: 400; border-bottom: 1px solid #25729a; padding: 5px; display: block;
+    text-transform: uppercase; margin: 10px 0px 5px 0px; color: #25729a !important; font-size: 1.1em !important; font-weight: 400; border-bottom: 1px solid #25729a; padding: 5px; display: block;
     width: 560px;
 }
 
@@ -1911,7 +1914,7 @@ label.ds-composite-component {
 
 span.error {
         display: block;
-        font-size: 10px;
+        font-size: 0.9em;
         color: rgb(0, 0, 0);
         background-color: inherit;
         margin: 10px 0px 10px 0px;
@@ -1923,7 +1926,7 @@ span.error {
 
 span.field-help {
         display: block;
-        font-size: 12px;
+        font-size:0.9em;
         color: rgb(60, 60, 60);
         float: left;
         margin-top: 8px;
@@ -2037,7 +2040,7 @@ div#ds-search-option a {
         padding: 0;
     text-decoration: none;
     color: #A8101C;
-    font-size: 11px;
+    font-size: 0.93em;
     margin-left: 72px;
 }
 
@@ -2072,7 +2075,7 @@ background-color: rgba(0, 0, 0, 0.1);
 div#ds-options h3 {
         padding: 0px;
         color: #A8101C;
-        font-size: 12px;
+        font-size:0.9em;
         
         text-transform: uppercase;  
         float: left;
@@ -2082,7 +2085,7 @@ div#ds-options h3 {
 div#ds-options h4 {
         color: #25729a;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 1.1em;
         font-weight: 400;
         font-style: normal;     
 }
@@ -2226,7 +2229,7 @@ div#ds-options li {
 div#ds-options li a {
     text-decoration: none;
     color: #A8101C;
-    font-size: 13px;   
+    font-size: 1.2em;   
     display: block;
     text-align: left;
     cursor: pointer;
@@ -2516,7 +2519,7 @@ border-radius: 5px;
     padding: 10px 3px 10px 10px;
     text-align: left;
     float: left;
-    font-size: 13px;
+    font-size: 1.2em;
     font-weight: 400;
 }
 
@@ -2725,7 +2728,7 @@ div.notice.success p {
         padding: 20px;
         color: #418c4f;
         text-align: center;
-        font-size: 12px;
+        font-size:0.9em;
         background-color: rgba(65, 140, 79, 0.15);
 }
 
@@ -2734,7 +2737,7 @@ div.notice.failure p {
         padding: 20px;
         color: #A8101C;
         text-align: center;
-        font-size: 12px;
+        font-size:0.9em;
         background-color: rgba(168, 16, 28, 0.15);
     
 
@@ -2751,7 +2754,7 @@ div.license-text {
         margin: 20px;
         margin-top: 5px;
         font-family: monospace;
-        font-size: 14px;
+        font-size: 1.1em;
         color: rgb(0, 0, 0);
 }
 
@@ -3129,7 +3132,7 @@ margin-bottom: 20px;
 #aspect_artifactbrowser_SimpleSearch_list_search-query label,
 #aspect_artifactbrowser_AdvancedSearch_list_search-query label{
     color: #418c4f !important; 
-    font-size: 12px !important; 
+    font-size:0.9em !important; 
     margin: 5px 0px 0px 0px; float: left; 
     font-weight: 400;
 
@@ -3199,7 +3202,7 @@ margin-bottom: 20px;
 #aspect_artifactbrowser_CommunityViewer_div_community-view ul#community-box li a,
 #aspect_artifactbrowser_CommunityRecentSubmissions_div_community-recent-submission #community-list li a{
     font-weight: 100;
-    font-size: 14px;
+    font-size: 1.1em;
     width: 550px;
     display: block;
     padding: 10px;
@@ -3211,7 +3214,7 @@ margin-bottom: 20px;
 #aspect_artifactbrowser_CommunityViewer_div_community-view #community-box li.odd a{
     background: rgba(0, 0, 0, 0.10);
     font-weight: 100; 
-    font-size: 14px; 
+    font-size: 1.1em; 
     width: 550px; 
     display: block; 
     padding: 10px;
@@ -3231,7 +3234,7 @@ margin-bottom: 20px;
 #aspect_artifactbrowser_CommunityViewer_div_community-view #community-box li.even a{
     background: rgba(0, 0, 0, 0.0);
     font-weight: 100; 
-    font-size: 14px; 
+    font-size: 1.1em; 
     width: 550px; 
     display: block; 
     padding: 10px;
@@ -3275,7 +3278,7 @@ margin-bottom: 20px;
 #aspect_artifactbrowser_AdvancedSearch_div_search-results #community-list .artifact-description .artifact-title a,
 #aspect_artifactbrowser_CollectionRecentSubmissions_div_collection-recent-submission #community-list .artifact-description .artifact-title a
 #aspect_artifactbrowser_CommunityRecentSubmissions_div_community-recent-submission #community-list .artifact-description .artifact-title a{
-    font-size: 14px;
+    font-size: 1.1em;
     width: 550px;
     height: 60px !important;
     padding:10px !important;
@@ -3406,7 +3409,7 @@ color: #25729a;
 #aspect_artifactbrowser_AdvancedSearch_table_search-query th{
     font-weight: 100;
 
-    font-size: 12px;
+    font-size:0.9em;
 }
 
 #aspect_artifactbrowser_AdvancedSearch_field_field1,
@@ -3502,7 +3505,7 @@ color: #25729a;
 #aspect_administrative_WithdrawnItems_list_jump-list li a,
 #aspect_administrative_PrivateItems_list_jump-list li a{
     color: #A8101C;
-    font-size: 12px;
+    font-size:0.9em;
 }
 
 
@@ -3573,7 +3576,7 @@ color: #25729a;
 
 #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-author #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-author-results ul#community-list #aspect_artifactbrowser_ConfigurableBrowse_table_browse-by-author-results .ds-table-header-row .ds-table-header-cell,
 #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-subject #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-subject-results ul#community-list #aspect_artifactbrowser_ConfigurableBrowse_table_browse-by-subject-results .ds-table-header-row .ds-table-header-cell{
-    font-size: 14px;
+    font-size: 1.1em;
     text-transform: uppercase;
     color: #418c4f;
     padding: 0px;
@@ -3614,7 +3617,7 @@ color: #25729a;
 
 #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-author #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-author-results ul#community-list #aspect_artifactbrowser_ConfigurableBrowse_table_browse-by-author-results .ds-table-row .ds-table-cell,
 #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-subject #aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-subject-results ul#community-list #aspect_artifactbrowser_ConfigurableBrowse_table_browse-by-subject-results .ds-table-row .ds-table-cell { 
-    font-weight: 100; font-size: 13px; 
+    font-weight: 100; font-size: 1.2em; 
    width: 550px; display: block;
 
  padding: 10px;}
@@ -3935,7 +3938,7 @@ ul#community-list .ds-artifact-item .artifact-description .artifact-info .publis
 #aspect_artifactbrowser_ItemViewer_div_item-view span.bold {
     color: #1c5a85;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size:0.9em;
     font-weight: 400;
     width: 70px;
     float: left;
@@ -3946,7 +3949,7 @@ background: url("../images/bg_sep.png") repeat-x;
 background-position: bottom;
 padding: 0px 0px 15px 0px;
 width: 570px;
-font-size: 12px;
+font-size:0.9em;
 }
 
 #aspect_artifactbrowser_ItemViewer_div_item-view .item-view-toggle.item-view-toggle-top {
@@ -4284,7 +4287,7 @@ height: 35px;
     text-transform: uppercase; 
     margin: 10px 0px 5px 0px; 
     color: #25729a !important; 
-    font-size: 14px !important; 
+    font-size: 1.1em !important; 
     font-weight: 400; 
     border-bottom: 1px solid #25729a; 
     padding: 5px 0px 5px 5px; 
@@ -4320,7 +4323,7 @@ height: 35px;
 }
 
 #aspect_submission_StepTransformer_list_submit-initial-questions fieldset legend{
-font-size: 12px !important;
+font-size:0.9em !important;
 color: #4e955b !important;
 font-weight: bolder;
 text-transform: uppercase;
@@ -4700,7 +4703,7 @@ display: none;
 #aspect_submission_StepTransformer_list_submit-review ol li fieldset legend{
     display: block !important;
     
-    text-transform: uppercase; margin: 10px 0px 5px 0px; color: #25729a !important; font-size: 14px !important; font-weight: 400; border-bottom: 1px solid #25729a; padding: 5px 0px 5px 5px; display: block; width: 565px;
+    text-transform: uppercase; margin: 10px 0px 5px 0px; color: #25729a !important; font-size: 1.1em !important; font-weight: 400; border-bottom: 1px solid #25729a; padding: 5px 0px 5px 5px; display: block; width: 565px;
 }
 
 #aspect_submission_StepTransformer_list_submit-review h3{
@@ -4751,7 +4754,7 @@ display: none;
 
 #aspect_submission_Submissions_div_submissions h2.h2_title.ds-div-tit.ds-div-head{
 text-transform: uppercase;
-font-size: 12px !important;
+font-size:0.9em !important;
 font-weight: 100;
 font-style: normal;
 border-bottom: 1px solid #25729a;
@@ -4797,7 +4800,7 @@ color: #25729a !important;
 
 #aspect_administrative_eperson_ManageEPeopleMain_div_epeople-main h2.h2_title.ds-div-tit.ds-div-head{
 text-transform: uppercase;
-font-size: 12px !important;
+font-size:0.9em !important;
 font-weight: 100;
 font-style: normal;
 border-bottom: 1px solid #25729a;
@@ -4839,7 +4842,7 @@ color: #25729a !important;
 
 #aspect_administrative_group_ManageGroupsMain_div_groups-main h2.h2_title.ds-div-tit.ds-div-head{
 text-transform: uppercase;
-font-size: 12px !important;
+font-size:0.9em !important;
 font-weight: 100;
 font-style: normal;
 border-bottom: 1px solid #25729a;
@@ -4864,7 +4867,7 @@ color: #25729a !important;
 #aspect_administrative_collection_CreateCollectionForm_list_metadataList,
 #aspect_administrative_community_EditCommunityMetadataForm_list_metadataList,
 #aspect_administrative_community_CurateCommunityForm_list_curationTaskList{
-    color: #25729a; text-transform: uppercase; font-size: 12px; font-weight: 100; font-style: normal;
+    color: #25729a; text-transform: uppercase; font-size:0.9em; font-weight: 100; font-style: normal;
      
 }
 
@@ -4991,7 +4994,7 @@ margin: 0px 0px 0px 10px;
 }
 
 #aspect_administrative_authorization_AuthorizationMain_div_authorization-containerList ul li a{
-    text-transform: uppercase; margin: 10px 0px 5px 0px; color: #25729a !important; font-size: 12px !important; font-weight: 100; border-bottom: 1px solid #25729a; padding: 5px; display: block;
+    text-transform: uppercase; margin: 10px 0px 5px 0px; color: #25729a !important; font-size:0.9em !important; font-weight: 100; border-bottom: 1px solid #25729a; padding: 5px; display: block;
     
 }
 
@@ -5006,7 +5009,7 @@ margin: 0px 0px 0px 10px;
 }
 
 #aspect_administrative_authorization_AuthorizationMain_div_authorization-containerList ul li ul li a{
-    font-size: 12px !important; font-weight: 100;
+    font-size: 0.9em !important; font-weight: 100;
     
     display: block;
     margin: 0px 0px 5px 15px; padding: 5px 5px 0px 5px; border: 0; color: #418c4f !important;
@@ -5021,7 +5024,7 @@ margin: 0px 0px 0px 10px;
 #aspect_administrative_authorization_AuthorizationMain_div_authorization-containerList ul li ul li ul li a{
     color: #A8101C !important;
     
-    font-size: 12px !important; font-weight: 100; display: block; 
+    font-size: 0.9em !important; font-weight: 100; display: block; 
     margin: 0px 0px 5px 30px; padding: 5px 5px 0px 5px; border: 0;  text-transform: none;
 }
 
@@ -5278,7 +5281,7 @@ float: left;
 
 #aspect_administrative_authorization_AdvacedAuthorizationsForm_div_advanced-authorization .ds-paragraph{
 display: block;
-font-size: 12px;
+font-size: 0.9em;
 color: #A8101C;
 background-color: inherit;
 margin: 10px 0px 10px 0px;
@@ -5486,7 +5489,7 @@ padding: 0px 0px 20px 0px;
 #aspect_administrative_registries_EditMetadataSchema_list_edit-schema-new-field-form{
     padding: 5px 0px 5px 5px; margin: 5px 0px 0px -3px;  border-bottom: 1px solid #25729a;
     
-    color: #25729a; text-transform: uppercase; font-size: 12px; font-weight: 100; font-style: normal;
+    color: #25729a; text-transform: uppercase; font-size: 0.9em; font-weight: 100; font-style: normal;
 }
 
 #aspect_administrative_registries_EditMetadataSchema_list_edit-schema-new-field-form li{
@@ -5790,7 +5793,7 @@ padding: 0px 0px 20px 0px;
     color: green;
     margin-bottom: 2%;
 		margin-top: -10%;
-		font-size: 16px;
+		font-size: 1.3em;
 }
 #ds-search-form-scope-all {
     margin-bottom: 5%;
@@ -5818,7 +5821,7 @@ padding: 0px 0px 20px 0px;
     background-color: #FFF;
 		border-radius: 5px 0 0 5px;
     height: 30px;
-   width: 130px;
+   width: 126px;
   border: 1px solid rgba(65, 140, 79, 0.43);
   margin-right: -3px;
   float: left;

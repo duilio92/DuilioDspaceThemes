@@ -104,7 +104,7 @@
 			      
 			      
 						<map:transform type="IncludePageMeta">
-							<map:parameter name="stylesheet.screen#1" value="lib/css/style.css"/>
+							<map:parameter name="stylesheet.screen#1" value="lib/css/new-style.css"/>
 							<map:parameter name="stylesheet.screen#2" value="lib/css/style-ie.css"/>
 							<map:parameter name="stylesheet.screen#3" value="lib/css/style-slider.css"/>
 							<map:parameter name="javascript#1" value="lib/js/jquery-1.9.1.min.js"/>
