@@ -107,8 +107,6 @@ function caseMes(mm){
 } 
 /*<span class="error"></span>*/
 function initializeDefaults(){
-	var editorInput = document.getElementById("aspect_submission_StepTransformer_field_dc_publisher");
-	editorInput.value= 'Facultad de Informtica';
 	
 	var idiomaCombobox = document.getElementById("aspect_submission_StepTransformer_field_dc_language_iso");
 	idiomaCombobox.selectedIndex = 3;//seteo el idioma por defecto en español

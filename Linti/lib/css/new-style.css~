@@ -1320,7 +1320,7 @@ left: 10px;
 color: #A8101C;
 font-weight: 400;
 float: left;
-font-size: 11px;
+font-size: 1em;
 position: absolute;
 top: 0;
 left: 10px;
@@ -1331,7 +1331,7 @@ a.previous-page-link:hover {
 }
 
 p.pagination-info {
-    font-size: 11px;
+    font-size: 1em;
 }
 
 ul.pagination-links {
@@ -1361,7 +1361,7 @@ a.next-page-link {
         color: #A8101C;
         font-weight: 400;
         float: right;
-        font-size: 11px;
+        font-size: 1em;
         position: absolute;
 top: 0;
 right: -450px;
@@ -1608,7 +1608,7 @@ display:none;
     padding: 0;  
     text-decoration: none;  
     color:   #A8101C;  
-    font-size: 11px;  
+    font-size: 1em;  
     margin-left: 10px;
     margin-top: 4px;
     display: block;
@@ -2649,14 +2649,14 @@ span#ds-footer-logo {
 }
 
 div#ds-footer p {
-    font-size: 11px;
+    font-size: 1em;
 
     float: left;
 }
 
 div#ds-footer-links {
         text-align: right;
-        font-size: 11px;
+        font-size: 1em;
         float: right;
         margin-top: -20px;
 }
@@ -3462,7 +3462,7 @@ color: #25729a;
     
     margin: 10px;
     font-style: italic;
-    font-size: 10px;
+    font-size: 0.8em;
     display: none;
 }
 
@@ -5828,7 +5828,7 @@ padding: 0px 0px 20px 0px;
   margin-bottom: 15px;
 }
 /*link invisible para accesibilidad*/
-#linkToBody{
+.linkInvisible{
 	background: transparent none repeat scroll 0 0;
     border-bottom: 1px solid white;
     border-bottom-right-radius: 8px;
@@ -5840,5 +5840,19 @@ padding: 0px 0px 20px 0px;
     top: -40px;
     transition: top 1s ease-out 0s, background 1s linear 0s;
     z-index: 100;
+}
+.linkInvisible2{
+color: rgba(0, 0, 0, 0.3);
+position: absolute;
+left: -10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+	}
+p#amara {
+    font-size: 1.33em;
+    padding-left: 0.4em;
+    padding-top: 0.9em;
 }
 

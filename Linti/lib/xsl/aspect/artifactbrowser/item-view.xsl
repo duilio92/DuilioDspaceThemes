@@ -334,6 +334,20 @@
                                 <xsl:call-template name="youtube-embed">
                                     <xsl:with-param name="url" select="$video-url"/>
                                 </xsl:call-template>
+
+
+																<p class="amara">
+																	<xsl:element name="a">
+																		<xsl:attribute name="id">
+																				amaralink
+																			</xsl:attribute>
+																		<xsl:attribute name="href">
+																								https://www.amara.org/es/videos/create/
+																		</xsl:attribute>
+																								Entra a	Amara 
+																</xsl:element>
+																<xsl:text>para subtitular este y otros videos</xsl:text>
+																</p>
                         </td>
                     </tr>
               <xsl:call-template name="itemSummaryView-DIM-fields">

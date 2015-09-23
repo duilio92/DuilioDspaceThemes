@@ -73,9 +73,9 @@
                     </map:when>
                     <map:otherwise>
                         <map:transform type="IncludePageMeta">
-														<map:parameter name="stylesheet.screen#0" value="lib/css/bootstrap.min.css"/>
+													<!--	<map:parameter name="stylesheet.screen#0" value="lib/css/bootstrap.min.css"/>
                             <map:parameter name="stylesheet.screen" value="lib/css/style.css"/>
-                            <map:parameter name="stylesheet.screen#2" value="lib/css/jquery-ui-1.8.15.custom.css"/>
+                            <map:parameter name="stylesheet.screen#2" value="lib/css/jquery-ui-1.8.15.custom.css"/>-->
 
                             <map:parameter name="javascript#1" value="lib/js/jquery-1.6.2.min.js"/>
                             <map:parameter name="javascript#2" value="lib/js/jquery-ui-1.8.15.custom.min.js"/>

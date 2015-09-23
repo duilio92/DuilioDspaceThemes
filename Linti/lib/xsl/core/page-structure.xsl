@@ -103,8 +103,11 @@
     <xsl:template name="buildHeader">
         <div id="ds-header">
 						<!-- Agrego link a ds-main para accesibilidad-->
-						<a id="linkToBody" href="#ds-body">
-							Saltar a la sección principal
+						<a id="linkToBody" class="linkInvisible" href="#ds-body">
+							Ir a la sección principal
+						</a>
+						<a id="linkToOpcions" class="linkInvisible" href="#ds-options">
+							Ir a la sección de busqueda y navegación
 						</a>
             <a>
                 <xsl:attribute name="href">

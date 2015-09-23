@@ -128,11 +128,158 @@
         </div>
     </xsl:template>
 
+<!--manejo la lista del contexto aparte -->
+		<xsl:template match="dri:options/dri:list[@id='aspect.viewArtifacts.Navigation.list.browse']" priority="8">
+		 <xsl:apply-templates select="dri:head"/>
+     <div class="ds-option-set" id="aspect_viewArtifacts_Navigation_list_browse" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+			<xsl:apply-templates select="dri:list[@id!='aspect.browseArtifacts.Navigation.list.context']"/> <!--Primero llamo a la lista global-->
+		 	 <xsl:apply-templates select="dri:list[@id='aspect.browseArtifacts.Navigation.list.context']"/><!-- Luego a la lista de coleccion o comunidad -->
+		 	  
+		  </div>
+		 </xsl:template>
+    
+		<xsl:variable name="baseURL" select="xmlui-dspace4" /> 
+		<xsl:template match="dri:list[@id='aspect.browseArtifacts.Navigation.list.global']" priority="1">
+		<ul class="ds-options-list ">
+		<li id="lista1">
+			<h4 class="ds-sublist-head">Todo DSpace</h4>
+			<ul class="ds-simple-list menu" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+				<div class="icono1">
+				<xsl:element name="a">
+   			 <xsl:attribute name="href">
+         <xsl:value-of select ="concat(baseURL,'community-list')"/>
+    		 </xsl:attribute>
+				 <i18n:text>xmlui.ArtifactBrowser.Navigation.communities_and_collections</i18n:text>				
+   		 </xsl:element>
+			</div>
+				<div class="icono2" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+					<xsl:element name="a">
+   				 <xsl:attribute name="href">
+         		<xsl:value-of select ="concat(baseURL,'browse?type=dateissued')"/>
+    		 	</xsl:attribute>
+					<i18n:text>xmlui.ArtifactBrowser.Navigation.browse_dateissued</i18n:text>
+					</xsl:element>
+			 </div>
+				<div class="icono3" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+					<xsl:element name="a">
+   				 <xsl:attribute name="href">
+         		<xsl:value-of select ="concat(baseURL,'browse?type=author')"/>
+    		 	</xsl:attribute>
+					<i18n:text>xmlui.ArtifactBrowser.Navigation.browse_author</i18n:text>
+					</xsl:element>								
+				</div>
 
+				<div class="icono4" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+					<xsl:element name="a">
+   			 		<xsl:attribute name="href">
+         			<xsl:value-of select ="concat(baseURL,'browse?type=title')"/>
+    		 		</xsl:attribute>
+				 		<i18n:text>xmlui.ArtifactBrowser.Navigation.browse_title</i18n:text>
+					</xsl:element>
+				</div>
+				<div class="icono5" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+					<xsl:element name="a">
+   			 		<xsl:attribute name="href">
+         			<xsl:value-of select ="concat(baseURL,'browse?type=subject')"/>
+    		 		</xsl:attribute>
+					<i18n:text>xmlui.ArtifactBrowser.Navigation.browse_subject</i18n:text>
+				</xsl:element>
+				</div>
+			</ul>
+			</li>
+		</ul>
+			<a id="linkToBody" class="linkInvisible2" href="#ds-body">
+							Ir a la sección principal
+			</a>
+    </xsl:template>
+
+ 		<xsl:template match="dri:list[@id='aspect.browseArtifacts.Navigation.list.context']">
+					<!-- Obtengo informacion de que tipo de container tengo, comunidad,coleccion o item-->
+			<xsl:variable name="type" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@qualifier='containerType']"/>
+			<xsl:choose> 
+			<xsl:when test="$type='type:community'">
+					<xsl:call-template name="comunidad"></xsl:call-template>
+			</xsl:when>
+			<xsl:otherwise>
+							<xsl:call-template name="coleccion"></xsl:call-template>		
+			</xsl:otherwise>
+			</xsl:choose>
+		</xsl:template>
+		<xsl:template name="coleccion">
+     <li id="lista2" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+			<h4 class="ds-sublist-head">Esta colección</h4>
+			<ul class="ds-simple-list menu" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+				<div class="icono1">
+				<xsl:element name="a">
+   			 		<xsl:attribute name="href">
+         			<xsl:value-of select ="concat(baseURL,'handle/123456789/1/browse?type=dateissued')"/>
+    		 		</xsl:attribute>
+					<i18n:text>xmlui.ArtifactBrowser.NavigationColeccion.browse_dateissued</i18n:text>
+				</xsl:element>
+				<!--<a href="/handle/123456789/1/browse?type=dateissued" id="_handle/123456789/1/browse_dateissued">
+						<i18n:text>xmlui.ArtifactBrowser.NavigationColeccion.browse_dateissued</i18n:text></a>-->
+				</div>
+				<div class="icono2" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+					<xsl:element name="a">
+   			 		<xsl:attribute name="href">
+         			<xsl:value-of select ="concat(baseURL,'handle/123456789/1/browse?type=author')"/>
+    		 		</xsl:attribute>
+					<i18n:text>xmlui.ArtifactBrowser.NavigationColeccion.browse_author</i18n:text>
+				</xsl:element>				
+
+	<!--<a href="/handle/123456789/1/browse?type=author" id="_handle/123456789/1/browse_author">
+<i18n:text>xmlui.ArtifactBrowser.NavigationColeccion.browse_author</i18n:text></a>-->
+				</div>
+				<div class="icono3" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+				<xsl:element name="a">
+   			 		<xsl:attribute name="href">
+         			<xsl:value-of select ="concat(baseURL,'handle/123456789/1/browse?type=title')"/>
+    		 		</xsl:attribute>
+					<i18n:text>xmlui.ArtifactBrowser.NavigationColeccion.browse_author</i18n:text>
+				</xsl:element>				
+				<!--<a href="/handle/123456789/1/browse?type=title" id="_handle/123456789/1/browse_title">
+				<i18n:text>xmlui.ArtifactBrowser.NavigationColeccion.browse_title</i18n:text></a>-->
+				</div>
+				<div class="icono4" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+				<xsl:element name="a">					
+					<xsl:attribute name="href">
+         			<xsl:value-of select ="concat(baseURL,'handle/123456789/1/browse?type=subject')"/>
+    		 		</xsl:attribute>
+					<i18n:text>xmlui.ArtifactBrowser.NavigationColeccion.browse_subject</i18n:text>
+				</xsl:element>				
+				<!--<a href="/handle/123456789/1/browse?type=subject" id="_handle/123456789/1/browse_subject">
+				<i18n:text>xmlui.ArtifactBrowser.NavigationColeccion.browse_subject</i18n:text></a>-->
+				</div>
+			</ul>
+		</li>
+    </xsl:template>
+	<xsl:template name="comunidad">
+     <li id="lista2" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+			<h4 class="ds-sublist-head">Esta comunidad</h4>
+			<ul class="ds-simple-list menu" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+				<div class="icono1">
+				<a href="/handle/123456789/1/browse?type=dateissued" id="_handle/123456789/1/browse_dateissued">
+						<i18n:text>xmlui.ArtifactBrowser.NavigationComunidad.browse_dateissued</i18n:text></a>
+				</div>
+				<div class="icono2" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+				<a href="/handle/123456789/1/browse?type=author" id="_handle/123456789/1/browse_author">
+<i18n:text>xmlui.ArtifactBrowser.NavigationComunidad.browse_author</i18n:text></a>
+				</div>
+				<div class="icono3" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+				<a href="/handle/123456789/1/browse?type=title" id="_handle/123456789/1/browse_title">
+				<i18n:text>xmlui.ArtifactBrowser.NavigationComunidad.browse_title</i18n:text></a>
+				</div>
+				<div class="icono4" xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+				<a href="/handle/123456789/1/browse?type=subject" id="_handle/123456789/1/browse_subject">
+				<i18n:text>xmlui.ArtifactBrowser.NavigationComunidad.browse_dateissued</i18n:text></a>
+				</div>
+			</ul>
+		</li>
+    </xsl:template>
     <!-- The template that applies to lists directly under the options tag that have other lists underneath
         them. Each list underneath the matched one becomes an option-set and is handled by the appropriate
         list templates. -->
-    <xsl:template match="dri:options/dri:list[dri:list]" priority="4">
+  <xsl:template match="dri:options/dri:list[dri:list]" priority="4">
         <xsl:apply-templates select="dri:head"/>
         <div>
             <xsl:call-template name="standardAttributes">
@@ -144,6 +291,7 @@
         </div>
     </xsl:template>
 
+		
     <!-- Special case for nested options lists -->
     <xsl:template match="dri:options/dri:list/dri:list" priority="3" mode="nested">
         <li id="lista{position()}">

@@ -138,14 +138,12 @@ var button_clicked="ninguno";
 function changeButton( clickeado){
 	//funcion para cambiar que boton se clickeo, y en base a eso cambiar el validador a usar
 		button_clicked= clickeado;	
-		alert(clickeado);
 }
 function validarNombre(){
 	//primero que nada valido el nombre, solo puede tener entre 3 y 20 caracteres y espacios
 	var nombre = document.getElementById("aspect_submission_StepTransformer_field_dc_contributor_author_first");
 	var apellido = document.getElementById("aspect_submission_StepTransformer_field_dc_contributor_author_last");
 	var parent = apellido.parentNode;
-	alert("entre  en nombre");
 	var validator= /^[a-zA-Z ]{3,23}$/;
 	if(!validator.test(apellido.value)  || !validator.test(nombre.value)){
 			var node = document.createElement("SPAN");
@@ -158,7 +156,6 @@ function validarNombre(){
 	return true;
 }
 function validarTitulo() {
-	alert("entre");
 	var titulo = document.getElementById("aspect_submission_StepTransformer_field_dc_title");
 	var parent = titulo.parentNode;
 	if(titulo.value== "" || titulo.value == null){		
@@ -201,14 +198,10 @@ function validarVideo(){
 
 }
 function validarForm(){
-	
-
 	if(button_clicked=="remove_nombre"){
-		alert("borrar nombre")		
 		return true;	
 	}
 	if(button_clicked=="add_nombre"){
-			alert("agregar_nombre");
 			return validarNombre();	
 	}
 
@@ -217,7 +210,6 @@ function validarForm(){
 		var resultado= validarNombre(); 
 		var resultado2= validarTitulo();
 		resultado= resultado && resultado2;
-		alert (resultado);	
 		//obtengo el tipo seleccionado del combobox
 		var sType = document.getElementById("aspect_submission_StepTransformer_field_dc_type");
 		var selectedOption;

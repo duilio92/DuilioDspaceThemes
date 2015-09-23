@@ -32,6 +32,7 @@
 		<xsl:import href="/lib/xsl/core/navigation.xsl"/>
 		<xsl:import href="/lib/xsl/custom/header.xsl"/>
 		<xsl:import href="/lib/xsl/custom/buildHead.xsl"/>
+		<xsl:import href="/lib/xsl/custom/collections-list.xsl"/>
     <xsl:output indent="yes"/>
     
     

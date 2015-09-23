@@ -57,7 +57,7 @@
         overriding the dri:document template.
     -->
     <xsl:template match="dri:document">
-        <html xml:lang="es-AR">
+        <html lang="es-AR"  xml:lang="es-AR">
             <!-- First of all, build the HTML head element -->
             <xsl:call-template name="buildHead"/>
             <!-- Then proceed to the body -->
@@ -103,8 +103,11 @@
     <xsl:template name="buildHeader">
         <div id="ds-header">
 						<!-- Agrego link a ds-main para accesibilidad-->
-						<a id="linkToBody" href="#ds-body">
+						<a id="linkToBody" class="linkInvisible" href="#ds-body">
 							Saltar a la sección principal
+						</a>
+						<a id="linkToOpcions" class="linkInvisible" href="#ds-options">
+							Saltar a la sección de busqueda y navegación
 						</a>
             <a>
                 <xsl:attribute name="href">

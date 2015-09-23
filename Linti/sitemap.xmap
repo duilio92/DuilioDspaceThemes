@@ -112,6 +112,8 @@
 							<map:parameter name="javascript#3" value="lib/js/script-slider.js"/>
 							<map:parameter name="javascript#4" value="lib/js/gdrive-button.js"/>
 							<map:parameter name="javascript#5" value="lib/js/item-send.js"/>
+							<map:parameter name="javascript#6" value="lib/js/item-send2.js"/>
+							<map:parameter name="javascript#7" value="lib/js/accesibilidad.js"/>
 							<map:parameter name="theme.path" value="{global:theme-path}"/>
 							<map:parameter name="theme.name" value="{global:theme-name}"/>
 						</map:transform>

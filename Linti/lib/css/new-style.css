@@ -5828,7 +5828,7 @@ padding: 0px 0px 20px 0px;
   margin-bottom: 15px;
 }
 /*link invisible para accesibilidad*/
-#linkToBody{
+.linkInvisible{
 	background: transparent none repeat scroll 0 0;
     border-bottom: 1px solid white;
     border-bottom-right-radius: 8px;
@@ -5840,5 +5840,19 @@ padding: 0px 0px 20px 0px;
     top: -40px;
     transition: top 1s ease-out 0s, background 1s linear 0s;
     z-index: 100;
+}
+.linkInvisible2{
+color: rgba(0, 0, 0, 0.3);
+position: absolute;
+left: -10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+	}
+.amara {
+    font-size: 1.33em;
+    padding-left: 0.4em;
+    padding-top: 0.9em;
 }
 
